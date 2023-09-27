@@ -195,12 +195,12 @@ body img{
 
 .projects{
     width: 75%;
-    transition: transform 0.5s;
 }
 
 .projects li{
     font-size: 35px;
     list-style-type: none;
+    transition: transform 0.5s;
 }
 
 .projects a :hover{
