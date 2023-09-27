@@ -1,0 +1,291 @@
+:root{
+    --primary-color: rgb(255, 255, 255);
+    --secondary-color: rgb(250, 246, 3);
+    --hover-color: rgb(0, 225, 255);
+    --background-color: rgb(0, 0, 0);
+    --border-color: rgb(212, 212, 212);
+    --navbar-color: rgba(0, 225, 255, 0.8);
+    --gradient: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(129, 222, 245, 0.8));
+    --gradient2: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(129, 222, 245, 0.9));
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+*{
+    margin: 0 auto;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--border-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+body img{
+    transition: transform 1.0s;
+}
+
+@media (max-width: 699px) {
+    .header {
+        width: 100%;
+        height: 700px;
+        background-image: var(--gradient);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-color: var(--background-color);
+        color: var(--primary-color);
+        display: grid;
+        place-content: center;
+        animation: fadeInAnimation ease 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+}
+
+@media (min-width: 700px) {
+    .header {
+        width: 100%;
+        height: 700px;
+        background-image: var(--gradient), url("images/L eyes.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-color: var(--background-color);
+        color: var(--primary-color);
+        display: grid;
+        place-content: center;
+        animation: fadeInAnimation ease 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+}
+
+.header h2{
+    font-size: 15px;
+}
+
+.header h1{
+    font-size: 75px;
+    color: var(--hover-color);
+}
+
+.header p{
+    padding: 0 10%;
+    margin: 50px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.header button{
+    font-size: 20px;
+    color: var(--primary-color);
+    padding: 2vh;
+    border: 2px solid white;
+    border-radius: 2em;
+    background-color: var(--background-color);
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s;
+}
+
+.header a :hover{
+    transform: scale(1.1);
+    color: var(--hover-color);
+}
+
+.navbar{
+    background-color: var(--navbar-color);
+    color: var(--primary-color);
+    height: 55px;
+    position: sticky;
+    top: 0;
+}
+
+.nav-center{
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-center button{
+    font-size: 15px;
+    width: 100px;
+    padding: 1vh;
+    margin-top: 1vh;
+    border: 2px solid white;
+    border-radius: 2em;
+    color: var(--primary-color);
+    background-color: var(--background-color);
+    transition: transform 0.5s;
+}
+
+.nav-center a :hover{
+    transform: scale(1.1);
+    color: var(--hover-color);
+}
+
+.container{
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    text-align: center;
+    /* margin-bottom: 1px; */
+}
+
+.contents li{
+    list-style-type: none;
+    font-size: 30px;
+    transition: transform 0.5s;
+}
+
+.contents a :hover{
+    transform: scale(1.1);
+    color: var(--hover-color);
+}
+
+.edu{
+    background-image: var(--gradient2), url(images/vels_university.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.education img{
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 1em;
+    margin: 0 50px;
+    display: inline;
+}
+
+.education a :hover{
+    transform: scale(1.1);
+}
+
+.skills-img :hover{
+    transform: scale(1.3);
+}
+
+.skills-img img{
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    display: inline;
+}
+
+.skills-text li{
+    display: block;
+    list-style-type: none;
+    margin: 2em;
+    font-size: 25px;
+}
+
+.projects{
+    width: 75%;
+    transition: transform 0.5s;
+}
+
+.projects li{
+    font-size: 35px;
+    list-style-type: none;
+}
+
+.projects a :hover{
+    transform: scale(1.1);
+    color: var(--hover-color);
+}
+
+.proj{
+    background-image: var(--gradient2), url(images/projects.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.achievement img{
+    width: 350px;
+    margin: 2em;
+}
+
+.achievement a :hover{
+    transform: scale(1.2);
+}
+
+.exp{
+    background-image: var(--gradient2), url(images/Office.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.experience{
+    display: inline-block;
+}
+
+.experience a :hover{
+    transform: scale(1.2);
+}
+
+.experience h6{
+    color: var(--background-color);
+}
+
+.company{
+    margin: 50px 0;
+    padding: 25px 20px;
+    border-radius: 2em;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.project{
+    margin: 50px 0;
+    padding: 25px 20px;
+    border-radius: 2em;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.experience img{
+    width: 350px;
+}
+
+.contact h4{
+    color: var(--hover-color);
+}
+
+.gmail{
+    margin: 30px 20px;
+}
+
+.call{
+    margin: 30px 20px;
+}
+
+.resume button{
+    font-size: 15px;
+    width: 200px;
+    padding: 1vh;
+    margin-top: 1vh;
+    border: 2px solid white;
+    border-radius: 2em;
+    color: var(--primary-color);
+    background-color: var(--background-color);
+    transition: transform 0.5s;
+}
+
+.resume a :hover{
+    transform: scale(1.1);
+    color: var(--hover-color);
+}
